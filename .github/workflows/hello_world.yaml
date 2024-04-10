@@ -1,13 +1,13 @@
 name: Hello world workflow
 
 on:
-  push
+  push:
     branches:
       - main
   pull_request:
-    branches
+    branches:
       - main
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   hello:
@@ -24,5 +24,3 @@ jobs:
       - name: goodbye world
         run: echo "Goodbye world"
         shell: bash
-
-
